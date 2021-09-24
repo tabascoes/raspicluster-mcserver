@@ -50,7 +50,7 @@
 
 今回は*1との手順とは違い、最初は[RaspberryPi Imager](https://www.raspberrypi.org/software/)という公式のソフトウェアを使用させていただきます。  
 早速[RaspberryPi Imager](https://www.raspberrypi.org/software/)をインストールします。  
-`Install (OS)`となっているボタンを押すとダウンロードが開始するので、ダウンロードされた`imager_(version).(拡張子)`をクリックしてください。  
+`Download for (OS)`となっているボタンを押すとダウンロードが開始するので、ダウンロードされた`imager_(version).(拡張子)`をクリックしてください。  
 インストールが完了したら、まずPCに**MicroSD Card**をぶっさしてやってください。  
 
 そし鱈、ついさっきインストールしたソフトを起動させます。  
