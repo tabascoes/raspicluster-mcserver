@@ -131,8 +131,11 @@ reboot
 # またrootになりましょう
 sudo su
 
+# 作者が作成したコマンドを実行しましょう
+curl -sSL https://raw.githubusercontent.com/tabascoes/raspicluster-mcserver/main/jp/second-setup.sh | sh
 
-sudo shutdown now
+# シャットダウンしましょう
+shutdown now
 ```
 
 ### コマンドを実行していく！
