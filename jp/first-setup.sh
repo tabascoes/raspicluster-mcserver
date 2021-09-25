@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function info(){
-  echo $1
+  echo -e "\e[1m$1 \e[21m"
 }
 
 info "ディスクの消耗を抑えるためにSWAPシステムを停止します"
