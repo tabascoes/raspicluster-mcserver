@@ -37,3 +37,8 @@ jobs:
          sudo chmod +x ./jp/second-setup.sh
          ./jp/second-setup.sh
 
+      # Runs a set of commands using the runners shell
+      - name: Custom Setup
+        run: |
+         sudo chmod +x ./jp/custom-setup.sh
+         ./jp/custom-setup.sh 01
