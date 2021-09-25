@@ -24,6 +24,7 @@ static domain_name_servers=$5
 EOF
 fi
 
+info ファイルを確認しています
 cat /etc/dhcpcd.conf
 
 # info "まだコマンドが作成されていません..."
