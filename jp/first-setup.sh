@@ -4,6 +4,12 @@ function info(){
   echo -e "\e[1m$1 \e[21m"
 }
 
+if [ $1 = "actions" ]; then
+  info "これはGitHub Actions専用のモードです"
+  info "通常の場合は使用しないでください!"
+  sleep 5s
+fi
+
 info "ディスクの消耗を抑えるためにSWAPシステムを停止します"
 systemctl disable dphys-swapfile.service
 
@@ -12,7 +18,7 @@ echo "cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1" >> /boot/cmdlin
 
 info "piユーザーはデフォルトで設定されているユーザーのため脆弱です"
 info "新しいユーザーを設定しましょう"
-if $1 = "actions" ; then
+if [ $1 = "actions" ]; then
   yes "thisisnotssecurepassword!" | adduser -q --gecos "" masterpi
 else
   adduser -q --gecos "" masterpi
