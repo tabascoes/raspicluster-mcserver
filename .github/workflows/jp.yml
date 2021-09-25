@@ -40,5 +40,5 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Custom Setup
         run: |
-         sudo chmod +x ./jp/custom-setup.sh
-         ./jp/custom-setup.sh 01
+         sudo chmod +x ./jp/customize-setup.sh
+         ./jp/customize-setup.sh 01
