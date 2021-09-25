@@ -24,7 +24,9 @@ static domain_name_servers=$5
 EOF
 fi
 
-info "まだコマンドが作成されていません..."
+cat /etc/dhcpcd.conf
+
+# info "まだコマンドが作成されていません..."
 
 info "ユーザー名をcluster$2に変更します。"
 usermod -l cluster$1 -d /home/cluster$2 -m masterpi
