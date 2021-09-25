@@ -31,3 +31,6 @@ cat /etc/dhcpcd.conf
 
 info "ユーザー名をcluster$2に変更します。"
 usermod -l cluster$1 -d /home/cluster$2 -m masterpi
+
+info 次回は以下のオプションを指定してください
+info $1 $($2 + 1) $3 $4 $5
