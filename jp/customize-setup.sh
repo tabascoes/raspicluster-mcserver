@@ -8,7 +8,7 @@ info "ipアドレスを割り当てます"
 info "固定ipアドレスは$1$2のようになります"
 if [ $3 = "lan" ]; then
   info "有線LAN(LAN)を設定しています"
-  cat <<EOF >> sudo tee /etc/dhcpcd.conf
+  cat <<EOF | tee /etc/dhcpcd.conf
   interface eth0
   static ip_address=$1$2/24
   static routers=$4
@@ -16,7 +16,7 @@ if [ $3 = "lan" ]; then
   EOF
 else
   info "無線LAN(Wi-FI)を設定しています"
-  cat <<EOF >> /etc/dhcpcd.conf
+  cat <<EOF | tee /etc/dhcpcd.conf
   interface wlan0
   static ip_address=$1$2/24
   static routers=$4
