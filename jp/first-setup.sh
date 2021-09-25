@@ -7,7 +7,7 @@ function info(){
 if [ $1 = "actions" ]; then
   info "これはGitHub Actions専用のモードです"
   info "通常の場合は使用しないでください!"
-  sleep 5s
+  sleep 5
 fi
 
 info "ディスクの消耗を抑えるためにSWAPシステムを停止します"
