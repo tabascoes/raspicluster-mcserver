@@ -120,7 +120,7 @@ sudo su
 
 # 作者が作った自動初期セットアップコマンドを実行しましょう
 # 安全面の為piユーザーは削除され、masterpiユーザーが追加されます
-curl -sSL https://raw.githubusercontent.com/tabascoes/raspicluster-mcserver/main/jp/first-setup.sh | sh
+curl -sSL https://git.io/Jz6SF | sh
 
 # 再起動して更新を反映させましょう
 reboot
