@@ -29,16 +29,16 @@ jobs:
       - name: First Setup
         run: |
          sudo chmod +x ./jp/first-setup.sh
-         ./jp/first-setup.sh
+         sudo ./jp/first-setup.sh
 
       # Runs a set of commands using the runners shell
       - name: Second Setup
         run: |
          sudo chmod +x ./jp/second-setup.sh
-         ./jp/second-setup.sh
+         sudo ./jp/second-setup.sh
 
       # Runs a set of commands using the runners shell
       - name: Custom Setup
         run: |
          sudo chmod +x ./jp/customize-setup.sh
-         ./jp/customize-setup.sh 01
+         sudo ./jp/customize-setup.sh 01
