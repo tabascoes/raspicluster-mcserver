@@ -1,14 +1,14 @@
 #!/bin/bash
 
 function info(){
-  echo $1
+  echo -e "\e[1m$1 \e[21m"
 }
 
-info KubenetesをインストールするためにDocker環境を入れます
+info "KubenetesをインストールするためにDocker環境を入れます"
 curl -sSL https://get.docker.com | sh
 sudo usermod -aG docker clusterpc
 
-info ついにKubernetesをインストールします！
+info "ついにKubernetesをインストールします！"
 sudo update-alternatives --set iptables /usr/sbin/iptables-legacy
 sudo update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy
 sudo update-alternatives --set arptables /usr/sbin/arptables-legacy
@@ -21,3 +21,5 @@ EOF
 sudo apt update
 sudo apt install -y kubelet kubeadm kubectl
 sudo apt-mark hold kubelet kubeadm kubectl
+
+info "プロセスが終了しました!"
