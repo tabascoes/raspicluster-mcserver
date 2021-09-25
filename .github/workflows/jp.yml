@@ -29,16 +29,16 @@ jobs:
       - name: First Setup
         run: |
          sudo chmod +x ./jp/first-setup.sh
-         sudo ./jp/first-setup.sh actions
+         sudo bash -x ./jp/first-setup.sh actions
 
       # Runs a set of commands using the runners shell
       - name: Second Setup
         run: |
          sudo chmod +x ./jp/second-setup.sh
-         sudo ./jp/second-setup.sh
+         sudo bash -x ./jp/second-setup.sh
 
       # Runs a set of commands using the runners shell
       - name: Custom Setup
         run: |
          sudo chmod +x ./jp/customize-setup.sh
-         sudo ./jp/customize-setup.sh 192.168.0.1 01 wifi 192.168.0.1 192.168.0.1
+         sudo bash -x ./jp/customize-setup.sh 192.168.0.1 01 wifi 192.168.0.1 192.168.0.1
