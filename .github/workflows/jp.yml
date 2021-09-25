@@ -34,5 +34,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Second Setup
         run: |
-          ./jp/second-setup.sh
-          sudo chmod +x ./jp/second-setup.sh
+         sudo chmod +x ./jp/second-setup.sh
+         ./jp/second-setup.sh
+
