@@ -12,7 +12,11 @@ echo "cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1" >> /boot/cmdlin
 
 info "piユーザーはデフォルトで設定されているユーザーのため脆弱です"
 info "新しいユーザーを設定しましょう"
-sudo adduser -q --gecos "" masterpi
+if $1 = "actions" ; then
+  yes "thisisnotssecurepassword!" | adduser -q --gecos "" masterpi
+else
+  adduser -q --gecos "" masterpi
+fi
 usermod -aG adm,dialout,cdrom,sudo,audio,video,plugdev,games,users,input,netdev,spi,i2c,gpio masterpi
 
 info "piユーザーを消しちゃいます!"
