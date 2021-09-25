@@ -39,4 +39,4 @@ if [ ${#nnum} = 1 ]; then
 fi
 
 info 次回は以下のオプションを指定してください
-info "$1 $nnum $3 $4 $5"
+info '$option='"$1 $nnum $3 $4 $5"
