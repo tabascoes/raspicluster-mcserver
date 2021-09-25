@@ -12,8 +12,8 @@ echo "cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1" >> /boot/cmdlin
 
 info "piユーザーはデフォルトで設定されているユーザーのため脆弱です"
 info "新しいユーザーを設定しましょう"
-adduser clusterpc
-usermod -aG adm,dialout,cdrom,sudo,audio,video,plugdev,games,users,input,netdev,spi,i2c,gpio clusterpc
+adduser masterpc
+usermod -aG adm,dialout,cdrom,sudo,audio,video,plugdev,games,users,input,netdev,spi,i2c,gpio masterpc
 
 info "piユーザーを消しちゃいます!"
 userdel pi
