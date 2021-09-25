@@ -35,7 +35,7 @@ usermod -l cluster$1 -d /home/cluster$2 -m masterpi
 $num=$2
 $nnum=$((num + 1))
 if [ ${#nnum} = 1 ]; then
-  $nnum=0$nnum
+  $nnum="0$nnum"
 fi
 
 info 次回は以下のオプションを指定してください
