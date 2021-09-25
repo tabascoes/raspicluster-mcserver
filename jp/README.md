@@ -146,6 +146,12 @@ shutdown now
 sudo su
 
 # 自動化コマンドを実行します
+# 連番を入力します
+# マスター以外の子分に01、02、03と振り分けます
+# このラズパイが1つ目なら、01としてください
+# この値は毎回変わります
+$num = 01
+
 # オプションを設定します
 
 # 連番にする前のipアドレスを指定します
@@ -165,6 +171,6 @@ $router = 192.168.0.1
 $dns = 192.168.0.1
 
 # ここは変更しないでください
-$option = "$ipbase $1 $mode $router $dns"
+$option = "$ipbase $num $mode $router $dns"
 curl -sSL https://git.io/JziqO | sh $option
 ```
