@@ -6,7 +6,7 @@ function info(){
 
 info "KubenetesをインストールするためにDocker環境を入れます"
 curl -sSL https://get.docker.com | sh
-sudo usermod -aG docker clusterpc
+sudo usermod -aG docker master
 
 info "ついにKubernetesをインストールします！"
 sudo update-alternatives --set iptables /usr/sbin/iptables-legacy
