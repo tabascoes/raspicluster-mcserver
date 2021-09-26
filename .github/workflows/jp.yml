@@ -41,4 +41,4 @@ jobs:
       - name: Custom Setup
         run: |
          sudo chmod +x ./jp/customize-setup.sh
-         sudo bash -x ./jp/customize-setup.sh 192.168.0.1 01 wifi 192.168.0.1 192.168.0.1
+         sudo bash -x ./jp/customize-setup.sh 01 wifi 192.168.0.1 192.168.0.1 192.168.0.1

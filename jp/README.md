@@ -191,11 +191,9 @@ $optionは、毎回連番しか変動しないので、全文字をメモした�
 #### 2台目以降
 ```
 # 出力された
-# $option=
-# を入力してください
-$option=192.168.XXX.XXX XX XXXX 192.168.XXX.XXX XXX.XXX.XXX.XXX
-
+# curl -sSL https://git.io/JziqO | sh XX XXX XXX.XXX.XXX.XXX XXX.XXX.XXX.XXX XXX.XXX.XXX
 curl -sSL https://git.io/JziqO | sh $option
+
 # そして出力された$optionをまた他のラズパイで実行してください
 # 全ての機器で実行したら完了です
 ```
